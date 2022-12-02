@@ -4,9 +4,10 @@ function verificarpessoa(){
     let civil = document.getElementById("civil").value
 
    
-    if (sexo == "f" || civil == "casada") {
+    if (sexo == "f" && civil == "casada") {
         
-        document.getElementById("resposta").innerHTML = "quanto tempo de casada?"
+        document.getElementById("resposta").innerHTML = ""
+        let tempo= prompt ("quanto tempo de casada?")
         
     }
 
